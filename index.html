@@ -503,7 +503,7 @@
              </label>
                <button type="submit" class="button-subscribe"> <p> Subscribe</p> 
                 <svg class="button-icon">
-                  <use  href="./images/icons.svg#icon-icon-send">
+                  <use  href="./images/icons.svg#icon-subscribefooter">
 
                   </use>
                 </svg>
@@ -531,7 +531,7 @@
             
               <label for="name" class="form-name"> Name</label>
               <div class="modal-form-list">
-              <input type="text" name="name" id="name" required />
+              <input class="modal-input" type="text" name="name" id="name" required />
               
               <svg class="modal-form-icon">
               <use href="./images/icons.svg#icon-people">
@@ -541,7 +541,7 @@
 
               <label for="phone" class="form-name"> Phone</label>
               <div class="modal-form-list">
-              <input type="tel" name="Phone" id="phone" required />
+              <input class="modal-input" type="tel" name="phone" id="phone" required />
               
               <svg class="modal-form-icon">
               <use href="./images/icons.svg#icon-phone">
@@ -551,23 +551,27 @@
 
                 <label for="email" class="form-name"> Email</label>
               <div class="modal-form-list">
-              <input type="email" name="email" id="email" required />
+              <input class="modal-input" type="email" name="email" id="email" required />
               
               <svg class="modal-form-icon">
               <use href="./images/icons.svg#icon-mail">
               </use>
               </svg>
-             </div>
-             <div>
+             </div> 
+             <div >
               <label class="form-name" for="comment">Comment</label>
-              <textarea class="modal-textarea" name="comment" id="comment" ></textarea>
-</div>
+
+              <textarea class="modal-textarea" name="comment" id="comment" placeholder="Text input"></textarea>
+            </div>
  
-  <div class="checkbox">
-  <input type="checkbox" name="checkbox" id="checkbox">
-  <label for="checkbox">I accept the terms and conditions of the  <a href="">Privacy Policy</a> </label>
+  <div class="check">
+  <input class="checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox" >
+  <label class="checkbox-label" for="checkbox">&nbsp; I accept the terms and conditions of the  &nbsp;   <a href="">Privacy Policy</a> </label>
   </div>
-            <div class="button-submit"> <button class="button-primary" type="submit">  Submit </button></div>
+            
+               <button class="button-modal-submit" type="submit">  Submit 
+              
+            </button>
              
 </form>
       
