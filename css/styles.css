@@ -94,7 +94,7 @@ a {
   letter-spacing: 0.02em;
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
   }
 
   p.primary-text{
@@ -366,10 +366,10 @@ margin-bottom: 24px;
 .checkbox-label{
   display: flex;
   align-items: center;
-  
- 
+  }
+.check-privacy{
+  text-decoration: underline;
 }
-
 .checkbox:checked + .checkbox-label::before{
  
   background-image: url(../images/chekmodal.svg);
@@ -393,10 +393,7 @@ border-color: var(--primary-button-color);
           cursor: pointer;
           
         }
-    .checkbox-label::before,a{
-     
-        text-decoration: underline;
-    }    
+   
 /* ф'ючерси */
 
 .futures {
@@ -476,6 +473,10 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+}
+
+.worker-card .primary-text{
+  margin-bottom: 8px;
 }
 .workers-icons {
   display: flex;
@@ -593,8 +594,8 @@ padding: 8px 24px;
 gap: 16px;
 
 color: var(--primary-white-color);
-background-color: var(--primary-button-color);
-border: var(--primary-button-color);
+background-color: var(--Primary-Brand-color);
+border: var(--Primary-Brand-color);
 border-radius: 4px;
  
 
@@ -602,8 +603,14 @@ font-weight: 600;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
-
+cursor: pointer;
+transition: border 256ms cubic-bezier(0.4, 0, 0.2, 1),background-color 256ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.button-subscribe:hover,.button-subscribe:focus{
+background-color: var(--primary-button-color);
+border: var(--primary-button-color);
+}
+
 .button-icon{
   width: 24px;
   height: 20px;
@@ -819,7 +826,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .subscribe-email{
- 
+  width: 264px;
   color: var(--primary-white-color);
   padding: 8px 16px;
   margin-right: 24px;
