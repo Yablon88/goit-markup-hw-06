@@ -496,19 +496,19 @@
             </div>
             
              <form class="form-subscibe">
-             <label>
+          
               <h3 class="footer-sosial-media">Subscribe</h3>
                 <div class="subscribe">       
                 <input class="subscribe-email" type="email" name="email" placeholder="E-mail" />
-             </label>
-               <button type="submit" class="button-subscribe"> <p> Subscribe</p> 
+             
+               <button type="submit" class="button-subscribe"> <span> Subscribe</span> 
                 <svg class="button-icon">
                   <use  href="./images/icons.svg#icon-subscribefooter">
 
                   </use>
                 </svg>
                </button>
-               </div>
+              </div>
 
             </form>
           </div>
@@ -528,10 +528,11 @@
         <form class="modal-form">
           <p class="modal-title">
           Leave your contacts and we will call you back</p>
-            
-              <label for="name" class="form-name"> Name</label>
-              <div class="modal-form-list">
-              <input class="modal-input" type="text" name="name" id="name" required />
+             
+              <label for="name" class="form-name">
+                <span class="label-name">Name</span> </label>
+             <div class="modal-form-list">
+              <input class="modal-input" type="text" name="name" id="name" required  pattern="^[a-zA-Zа-яА-Я]+$" minlength="2"/>
               
               <svg class="modal-form-icon">
               <use href="./images/icons.svg#icon-people">
@@ -539,9 +540,10 @@
               </svg>
              </div>
 
-              <label for="phone" class="form-name"> Phone</label>
+              <label for="phone" class="form-name">
+                <span class="label-name">Phone</span> </label>
               <div class="modal-form-list">
-              <input class="modal-input" type="tel" name="phone" id="phone" required />
+              <input class="modal-input" type="tel" name="phone" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx"/>
               
               <svg class="modal-form-icon">
               <use href="./images/icons.svg#icon-phone">
@@ -549,7 +551,8 @@
               </svg>
              </div>
 
-                <label for="email" class="form-name"> Email</label>
+                <label for="email" class="form-name"> 
+                  <span class="label-name">Email</span> </label>
               <div class="modal-form-list">
               <input class="modal-input" type="email" name="email" id="email" required />
               
@@ -559,7 +562,8 @@
               </svg>
              </div> 
              <div >
-              <label class="form-name" for="comment">Comment</label>
+              <label class="form-name" for="comment">
+                <span class="label-name">Comment</span> </label>
 
               <textarea class="modal-textarea" name="comment" id="comment" placeholder="Text input"></textarea>
             </div>
