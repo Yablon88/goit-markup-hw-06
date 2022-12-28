@@ -368,6 +368,7 @@ margin-bottom: 24px;
   align-items: center;
   }
 .check-privacy{
+  color: var(--Primary-Brand-color);
   text-decoration: underline;
 }
 .checkbox:checked + .checkbox-label::before{
@@ -759,10 +760,10 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-positioning {
   display: flex;
- justify-content: space-between;
+ 
 }
 .footer-logo {
-  margin-right: 40px;
+  margin-right: 120px;
 }
 
 .footer .studio {
@@ -775,7 +776,9 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.5;
   margin-top: 16px;
 }
-
+.footer-media{
+  margin-right: 80px;
+}
 .footer-sosial-media {
   font-weight: 600;
   font-size: 16px;
